@@ -259,3 +259,52 @@ fun main() {
     }
     println("$maxi")
 }
+
+/*
+A detecting device compares the size of components produced by a machine against the reference component.
+
+If the size of the component is larger, it can be fixed; the detector prints 1.
+If the size of the component is smaller, it is deemed as a rejection; the detector prints -1.
+If the component is perfect, it is sent to the box; the detector prints 0.
+
+Write a program which takes n (the number of parts) as input and then the detector sequence. The program should output three numbers in a single line — the number of perfect components, the number of larger components, and the number of rejections.
+
+fun main() {
+    val n = readLine()!!.toInt()
+    var l = 0
+    var s = 0
+    var p = 0
+    repeat(n) {
+        val a = readLine()!!.toInt()
+        when(a) {
+            1 -> l++
+            0 -> p++
+           -1 -> s++
+        }
+    }
+    print("$p $l $s")
+}*/
+
+/*Write a program that reads a sequence and prints how many positive numbers it contains.
+fun main() {
+    val n = readLine()!!.toInt()
+    var b = 0
+    repeat(n) {
+        val a =  readLine()!!.toInt()
+        if(a > 0 ) {
+            b++
+        }
+    }
+    print("$b")
+}*/
+/* Another way of previous program
+fun main() {
+    println(List(readLine()!!.toInt()) { readLine()!!.toInt() }.count { it > 0 })
+}
+*/
+
+fun main() {
+   print(readLine()!!.toInt() == readLine()!!.first().toInt())
+
+}
+
